@@ -4,58 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Fuente de google -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"> 
 
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="/Form-sign-up/assets/style/css/style-sign-up.css">
+    <link rel="stylesheet" href="/assets-Registro/style/css/style-sign-up.css">
 
     <script src="https://kit.fontawesome.com/62b3007a1e.js"></script>
     <title>Registro</title>
 </head>
-<body class="text-center">
-      <form class="form-signin rounded">
-          <div class="form-group">
-          
-                <h1>SmartCorp</h1>
-              <hr>
-              <p>Por favor, llena el siguiente formulario</p>
-          </div>
-          <div class="form-group">
-              <input class="form-control" type="email" name="correo electrónico" placeholder="Correo electrónico">
-          </div>
-          <div class="form-group">
-              <input class="form-control" type="name" name="nombre" placeholder="Nombre completo">
-          </div>
-          <div class="form-group">
-              <input class="form-control" type="password" name="contraseña" placeholder="Contraseña">
-          </div>
-          <div class="form-container">
-                <p>Seleccione su género:</p>
-                <div class="form-row align-items-center">
-                        <div class="col-auto my-1">
-                          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                            <option value="1">Masculino</option>
-                            <option value="2">Femenino</option>
-                            <option value="3">Otro</option>
-                          </select>
-                        </div>
-                </div>
-          </div>
-                <div class="form-group-date">
-                    <input type="date" name="fechaNacimiento" id="fecha">
-                </div>
-          <button type="submit" class="btn btn-primary">Registrarse</button>
-          
-          <div class="bottom">
-              <p>Al registrarte, aceptas nuestras Condiciones, la Política de datos y la Política de cookies.</p>
-          </div>
+<body>
 
- 
-    </form> 
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="pagina-principal.html">
+           <strong class="title">SMARTCORP</strong>
+          </a>
+        </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Regístrate</strong>
+                </a>
+                <a class="button is-light">
+                   Inicia Sesión
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <span class="subtitle">Por favor, llene el siguiente formulario</span>
+        <div class="field">
+             <label class="label">Nombre completo</label>
+             <div class="control has-icons-left">
+                 <input type="text" class="input" placeholder="Nombre">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+             </div>
+        </div>
+
+        <div class="field">
+                <label class="label">Correo electrónico</label>
+                <div class="control has-icons-left">
+                    <input type="email" class="input" placeholder="Correo electrónico">
+                         <span class="icon is-small is-left">
+                           <i class="fas fa-envelope"></i>
+                         </span>
+                </div>
+           </div>
+
+           <div class="field">
+                <label class="label">Contraseña</label>
+                <div class="control has-icons-left">
+                    <input type="text" class="input" placeholder="Máximo 25 carácteres">
+                         <span class="icon is-small is-left">
+                           <i class="fas fa-lock"></i>
+                         </span>
+                </div>
+           </div>
+
+           <div class="field">
+                <label class="label">Selecciona tu género</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>Hombre</option>
+                      <option>Mujer</option>
+                      <option>Otro</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                  <label class="label">Selecciona tu fecha de nacimiento</label>
+                  <p class="control">
+                      <input class="date" type="date">
+                  </p>
+              </div>
+
+              <div class="field is-grouped is-grouped-centered">
+                    <div class="control">
+                            <button class="button is-link">Enviar</button>
+                    </div>
+               </div>
+    
+    </div>
+      
 
 </body>
 </html>

@@ -1,0 +1,30 @@
+.body{
+    font-family: 'Lato', sans-serif;
+}
+.box{
+ text-align: center;
+}
+
+#rightbox{
+    margin: 10%;
+    text-align: justify;
+    display: block;
+}
+#rightbox h3{
+    width: 180px;
+}
+
+.column{
+    padding: 5%;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    color: black;
+}
+
+.title{
+    font-size: 50px;
+}

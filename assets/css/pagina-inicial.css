@@ -1,17 +1,9 @@
-.body{
+*{
     font-family: 'Lato', sans-serif;
 }
+
 .box{
  text-align: center;
-}
-
-#rightbox{
-    margin: 10%;
-    text-align: justify;
-    display: block;
-}
-#rightbox h3{
-    width: 180px;
 }
 
 .column{
@@ -27,4 +19,15 @@
 
 .title{
     font-size: 50px;
+}
+.caption-inner h1{
+    color: black;
+
+}
+.caption-text{
+    text-align: justify;
+}
+
+.footer a{
+    text-decoration: none;
 }

@@ -2,6 +2,13 @@ body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
   }
+  .icon{
+    font-size: 20px;
+}
+
+.container{
+  width: 300px;
+}
 
   .sidenav {
     height: 100%;

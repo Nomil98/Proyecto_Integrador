@@ -47,11 +47,12 @@
                         <hr>
                     </div>
             
-        
+                            <form action="authenticate.php" method="post">
                     <div class="field">
-                        
+                        <label for="username">
+                        </label>
                             <div class="control has-icons-left">
-                                <input type="email" class="input" placeholder="Correo electrónico">
+                                <input type="text" class="input" placeholder="Usuario" name="username" id="username" required>
                                     <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                     </span>
@@ -59,9 +60,11 @@
                     </div>
         
                     <div class="field">
-                        
+                        <label for = "password">
+                          
+                        </label>
                             <div class="control has-icons-left">
-                                <input type="text" class="input" placeholder="Contraseña">
+                                <input type="password" name= "password" id = "password" required class="input" placeholder="Contraseña">
                                     <span class="icon is-small is-left">
                                     <i class="fas fa-lock"></i>
                                     </span>
@@ -70,11 +73,11 @@
         
                     <div class="field is-grouped is-grouped-centered">
                             <div class="control">
-                                    <button class="button is-link">Ingresar</button>
+                                    <button  type = "submit" value = "Login" class="button is-link">Ingresar</button>
                                     
                             </div>
                     </div>
-        
+                          </form>
                     <div class="field is-grouped is-grouped-centered">
                             <div class="control">
                                     <a href="password-recovery.html">¿Olvidaste tu contraseña?</a> 
